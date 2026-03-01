@@ -80,14 +80,14 @@ typedef struct(short i)
     short En;
     short Ag;
     short Lu;
-    AffinityBitflags Elements;
-    UnknownBitflags Unknown;
-    ubyte UnknownArray [10];
+    AffinityValues Elements;
+    UnknownValues Unknown;
+    ubyte UnknownArray [10]; //this still needs to be figured out
     short EmptyArray [35];
 }PersonaData <read=EnumToString(Name)>;
 
 //Personas.
 struct {
     for (short g = 0; g < 288; g++)
-    {PersonaData Persona(g);}
+        {PersonaData Persona(g);}
 } Personas;
