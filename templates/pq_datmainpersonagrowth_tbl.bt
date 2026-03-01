@@ -12,7 +12,7 @@
 //------------------------------------------------
 
 //------------------------------------------------
-// Includes pq_enums.bt for skill and persona names.
+// Includes pq_enums.bt for skill, persona, and user names.
 // Not sure exactly where else I should disclaim this,
 // but this file was derived from Century-300's
 // PQ2 versions of the same .bt and was developed
@@ -54,7 +54,7 @@ typedef struct {
 // Main Persona structure.
 typedef struct (short i) {
     local PersonaName Name = i;
-    short User;
+    PersonaUser User;
     short Levels <name = "Levels Available">;
     Skills PersonaSkills <name = "Persona Skills">;
     StatIncreases StatBlock <name = "Level Up Stats">; 
@@ -63,5 +63,5 @@ typedef struct (short i) {
 //Main Personas.
 struct {
     for (short g = 240; g < 288; g++)
-    {Persona MainPersona(g);}
+    {PersonaData MainPersona(g);}
 } Personas;
