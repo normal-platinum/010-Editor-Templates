@@ -4,7 +4,7 @@
 //      File: 
 //   Authors: Lumi Platinum, Lipsum, Century_
 //   Version: 1.0
-//   Purpose: Providing names for PQ's Skills and Arcanas.
+//   Purpose: Providing names for PQ's Skills, Personas, and Arcanas.
 //  Category: Persona Q
 // File Mask: 
 //  ID Bytes: 
@@ -40,6 +40,41 @@ Moon = 19,
 Sun = 20,
 Judgement = 21,
 World = 22,
+};
+
+enum<short> PersonaUser {
+P4MC = 1,
+P3MC = 2,
+Yosuke = 3,
+Chie = 4,
+Yukiko = 5,
+Rise = 6,
+Kanji = 7,
+Naoto = 8,
+Teddie = 9,
+Yukari = 10,
+Junpei = 11,
+Akihiko = 12,
+Mitsuru = 13,
+Fuuka = 14,
+Aigis = 15,
+Ken = 16,
+Koromaru = 17,
+Shinjiro = 18,
+Zen_Rei = 19,
+Chronos = 20,
+Blank_21 = 21,
+Blank_22 = 22,
+Blank_23 = 23,
+//Special versions of party members that appear in the 1st boss fight
+P4MC_Boss1 = 24,
+Yosuke_Boss1 = 25,
+Chie_Boss1 = 26,
+Yukiko_Boss1 = 27,
+P3MC_Boss1 = 28,
+Mitsuru_Boss1 = 29,
+Ken_Boss1 = 30,
+Yukari_Boss1 = 31,
 };
 
 enum<short> PersonaName {
@@ -323,14 +358,15 @@ Zen = 276,
 Zen_2 = 277,
 Rei = 278,
 Rei_2 = 279,
-Izanagi_2 = 280,
-Jiraya_2 = 281,
-Tomoe_2 = 282,
-Konohana_Sakuya_2 = 283,
-Orpheus_2 = 284,
-Penthesilea_2 = 285,
-Nemesis_2 = 286,
-Io_2 = 287,
+//Special versions of party personas that appear in the 1st boss fight
+Izanagi_Boss1 = 280,
+Jiraya_Boss1 = 281,
+Tomoe_Boss1 = 282,
+Konohana_Sakuya_Boss1 = 283,
+Orpheus_Boss1 = 284,
+Penthesilea_Boss1 = 285,
+Nemesis_Boss1 = 286,
+Io_Boss1 = 287,
 };
 
 enum<short> PQBattleSkill {
